@@ -1,0 +1,49 @@
+<?php
+ include 'conn.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Decode the JSON data
+    $json = file_get_contents('php://input');
+    $data = json_decode($json, true);
+
+    $username = $_POST["username"];
+
+    // Establish the database connection
+    // $servername = "localhost";
+    // $username_db = "root";
+    // $password_db = "";
+    // $dbname = "medicalproject";
+
+    // $conn = new mysqli($servername, $username_db, $password_db, $dbname);
+
+    // if ($conn->connect_error) {
+    //     die("Connection failed: " . $conn->connect_error);
+    // }
+
+    // Use prepared statements to prevent SQL injection
+    $sql = "SELECT q1, q2, q3, q4, q5, q6 FROM week6dose WHERE username = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $stmt->bind_result($q1, $q2, $q3, $q4, $q5, $q6);
+
+    $response = array();
+
+    while ($stmt->fetch()) {
+       
+        $response =  $q1 . ', ' . $q2 . ', ' . $q3 . ', ' . $q4 . ', ' . $q5 . ', ' . $q6;
+    }
+
+    if (empty($response)) {
+        // $insertSql1 = "INSERT INTO week7dose (username, q1, q2, q3,q4,q5,q6) VALUES ('$username', '$q1', '$q2', '$q3','$q4','$q5','$q6')";
+        // $insertStmt1 = $conn->query($insertSql1);
+        $insertSql2 = "INSERT INTO week6dose (username, q1, q2, q3,q4,q5,q6) VALUES ('$username', '$q1', '$q2', '$q3','$q4','$q5','$q6')";
+        $insertStmt2 = $conn->query($insertSql2);
+        $response =  '0' . ', ' . '0' . ', ' . '0' . ', ' . '0' . ', ' . '0' . ', ' . '0';
+    }
+
+    $stmt->close();
+    $conn->close();
+
+    echo json_encode($response);
+}
+?>

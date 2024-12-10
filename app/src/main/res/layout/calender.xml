@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:id="@+id/card1"
+    android:paddingTop="20dp"
+    android:paddingRight="25dp"
+    android:paddingBottom="25dp"
+
+    app:cardCornerRadius="25dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp">
+
+
+        <CalendarView
+            android:id="@+id/calendar1"
+            android:layout_width="320dp"
+            android:layout_height="298dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/calenderbgbox"
+            android:selectedWeekBackgroundColor="@color/bluepalette"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="567dp"></CalendarView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

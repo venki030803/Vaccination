@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">medicalproject</string>
+    <string name="title_activity_docyear4qa1">docyear4qa1</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

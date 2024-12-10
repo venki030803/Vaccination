@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Medicalproject"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".docyear5qa5"
+            android:exported="false" />
+        <activity
+            android:name=".docyear5qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docyear5qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docyear5qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docyear5qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docyear4qa5"
+            android:exported="false" />
+        <activity
+            android:name=".docyear4qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docyear4qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docyear4qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docyear4qa1"
+            android:exported="false"
+            android:label="@string/title_activity_docyear4qa1" />
+        <activity
+            android:name=".docyear3qa5"
+            android:exported="false" />
+        <activity
+            android:name=".docyear3qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docyear3qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docyear3qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docyear3qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docyear2qa5"
+            android:exported="false" />
+        <activity
+            android:name=".docyear2qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docyear2qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docyear2qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docyear2qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth18qa5"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth18qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth18qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth18qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth18qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth15qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth15qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth15qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docyear1qa5"
+            android:exported="false" />
+        <activity
+            android:name=".docyear1qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docyear1qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docyear1qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docyear1qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth9qa5"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth9qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth9qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth9qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth9qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth6qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth6qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth6qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth6qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docweek14qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docweek14qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docweek14qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docweek14qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docweek7qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docweek7qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docweek7qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docweek7qa1"
+            android:exported="false" />
+        <activity
+            android:name=".docweek6qa3"
+            android:exported="false" />
+        <activity
+            android:name=".docweek6qa2"
+            android:exported="false" />
+        <activity
+            android:name=".docweek6qa1"
+            android:exported="false" />
+        <activity
+            android:name=".profilemyactivity"
+            android:exported="false" />
+        <activity
+            android:name=".year5qa5"
+            android:exported="false" />
+        <activity
+            android:name=".year5qa4"
+            android:exported="false" />
+        <activity
+            android:name=".year5qa3"
+            android:exported="false" />
+        <activity
+            android:name=".year5qa2"
+            android:exported="false" />
+        <activity
+            android:name=".year5doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".year5qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docyear5"
+            android:exported="false" />
+        <activity
+            android:name=".calender_year_5"
+            android:exported="false" />
+        <activity
+            android:name=".year4qa5"
+            android:exported="false" />
+        <activity
+            android:name=".year4qa4"
+            android:exported="false" />
+        <activity
+            android:name=".year4qa3"
+            android:exported="false" />
+        <activity
+            android:name=".year4qa2"
+            android:exported="false" />
+        <activity
+            android:name=".year3qa5"
+            android:exported="false" />
+        <activity
+            android:name=".year3qa4"
+            android:exported="false" />
+        <activity
+            android:name=".year3qa3"
+            android:exported="false" />
+        <activity
+            android:name=".year3qa2"
+            android:exported="false" />
+        <activity
+            android:name=".year2qa5"
+            android:exported="false" />
+        <activity
+            android:name=".year2qa4"
+            android:exported="false" />
+        <activity
+            android:name=".year2qa3"
+            android:exported="false" />
+        <activity
+            android:name=".year2qa2"
+            android:exported="false" />
+        <activity
+            android:name=".month18qa5"
+            android:exported="false" />
+        <activity
+            android:name=".month18qa4"
+            android:exported="false" />
+        <activity
+            android:name=".month18qa3"
+            android:exported="false" />
+        <activity
+            android:name=".month18qa2"
+            android:exported="false" />
+        <activity
+            android:name=".month15qa3"
+            android:exported="false" />
+        <activity
+            android:name=".month15qa2"
+            android:exported="false" />
+        <activity
+            android:name=".year1qa5"
+            android:exported="false" />
+        <activity
+            android:name=".year1qa4"
+            android:exported="false" />
+        <activity
+            android:name=".year1qa3"
+            android:exported="false" />
+        <activity
+            android:name=".year1qa2"
+            android:exported="false" />
+        <activity
+            android:name=".year4doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".year4qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docyear4"
+            android:exported="false" />
+        <activity
+            android:name=".calender_year_4"
+            android:exported="false" />
+        <activity
+            android:name=".year3doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".year3qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docyear3"
+            android:exported="false" />
+        <activity
+            android:name=".calender_year_3"
+            android:exported="false" />
+        <activity
+            android:name=".year2doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".year2qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docyear2"
+            android:exported="false" />
+        <activity
+            android:name=".calender_year_2"
+            android:exported="false" />
+        <activity
+            android:name=".month18doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".month18qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth18"
+            android:exported="false" />
+        <activity
+            android:name=".calender_month_18"
+            android:exported="false" />
+        <activity
+            android:name=".month15doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".month15qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth15"
+            android:exported="false" />
+        <activity
+            android:name=".calender_month_15"
+            android:exported="false" />
+        <activity
+            android:name=".year1doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".year1qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docyear1"
+            android:exported="false" />
+        <activity
+            android:name=".calender_year_1"
+            android:exported="false" />
+        <activity
+            android:name=".month9qa5"
+            android:exported="false" />
+        <activity
+            android:name=".month9qa4"
+            android:exported="false" />
+        <activity
+            android:name=".month9qa3"
+            android:exported="false" />
+        <activity
+            android:name=".month9qa2"
+            android:exported="false" />
+        <activity
+            android:name=".month9qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".month9doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth9"
+            android:exported="false" />
+        <activity
+            android:name=".calender_month_9"
+            android:exported="false" />
+        <activity
+            android:name=".month6doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".month6qa4"
+            android:exported="false" />
+        <activity
+            android:name=".month6qa3"
+            android:exported="false" />
+        <activity
+            android:name=".month6qa2"
+            android:exported="false" />
+        <activity
+            android:name=".month6qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".docmonth6"
+            android:exported="false" />
+        <activity
+            android:name=".calender_month_6"
+            android:exported="false" />
+        <activity
+            android:name=".week14qa4"
+            android:exported="false" />
+        <activity
+            android:name=".week14qa3"
+            android:exported="false" />
+        <activity
+            android:name=".week14qa2"
+            android:exported="false" />
+        <activity
+            android:name=".week14qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".week14doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".docweek14dose"
+            android:exported="false" />
+        <activity
+            android:name=".calender_14"
+            android:exported="false" />
+        <activity
+            android:name=".calender_7"
+            android:exported="false" />
+        <activity
+            android:name=".calender"
+            android:exported="false" />
+        <activity
+            android:name=".week7qa4"
+            android:exported="false" />
+        <activity
+            android:name=".docweek7dose"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".week7qa3"
+            android:exported="false" />
+        <activity
+            android:name=".week7qa2"
+            android:exported="false" />
+        <activity
+            android:name=".week7qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".week7doseactivity"
+            android:exported="false" />
+        <activity
+            android:name=".docweek6dose"
+            android:exported="false" />
+        <activity
+            android:name=".doctorscheduleactivity"
+            android:exported="false" />
+        <activity
+            android:name=".patientscheduleactivity"
+            android:exported="false" />
+        <activity
+            android:name=".trashtotdoc"
+            android:exported="false" />
+        <activity
+            android:name=".week6qa3"
+            android:exported="false" />
+        <activity
+            android:name=".weekqa2"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".week6qaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FaqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Week6doseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Notificationctivity2"
+            android:exported="false" />
+        <activity
+            android:name=".UserLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyChildActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TotaldoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ArticleHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorlogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentDoctorloginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

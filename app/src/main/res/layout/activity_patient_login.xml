@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientLoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="409dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bgallbox" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Activity"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView39"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="39dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+        app:layout_constraintEnd_toEndOf="@+id/imageView39"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166"
+        app:srcCompat="@drawable/blueback" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="368dp"
+        android:layout_height="630dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bgbox5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView39"
+        app:layout_constraintVertical_bias="0.598">
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="340dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bgbox4"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView43"
+            app:layout_constraintVertical_bias="0.013">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="9dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/user3" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Patient"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="280dp">
+
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="141dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/bgbox4"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.868"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.394">
+
+                <ImageView
+                    android:id="@+id/imageView41"
+                    android:layout_width="43dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@drawable/doseimg" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="No Of Dues "
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="0/1"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="143dp"
+                android:layout_height="141dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/bgbox4"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.095"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.394">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Doses
+            Completed"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="5/12"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="20dp"
+                    app:srcCompat="@drawable/vaccinated" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout9"
+            android:layout_width="340dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bgbox4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Doses"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView47"
+                android:layout_width="15dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/vaccinedose" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="340dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bgbox4"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.606">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Questionaries"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="60dp"
+                app:srcCompat="@drawable/quesans" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
